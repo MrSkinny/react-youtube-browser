@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import YTSearch from 'youtube-api-search';
 
@@ -11,13 +11,22 @@ YTSearch({key: API_KEY, term: 'xbox'}, function(data){
 
 // Create new component. This component to produce HTML
 
-const App = () => {
-  return (
-    <div>
-      <SearchBar />
-    </div>
-  );
+class App extends Component {
+  constructor(props){
+    super(props);
+    
+    this.state = { videos: [] };
+  }
+  
+  render() {
+    return(
+      <div>
+        <SearchBar />
+      </div>
+    );
+  }
 }
+
 
 // Take this component's generated HTML and put on page.
 
