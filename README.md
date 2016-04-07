@@ -1,25 +1,13 @@
-# ReduxSimpleStarter
+# YouTube Browser in React
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+First React app, uses Youtube API to populate video details and embedded player.
 
-###Getting Started###
+### Installation
 
-There are two methods for getting started with this repo.
+* `npm install`
+* Rename `config/secrets_example.json` to `secrets.json` and include your own Youtube API key. (This file is in *gitignore*.)
 
-####Familiar with Git?#####
-Checkout this repo, install depdencies, then start the gulp process with the following:
+### Usage
 
-```
-	> git clone git@github.com:StephenGrider/ReduxSimpleStarter.git
-	> cd ReduxSimpleStarter
-	> npm install
-	> npm start
-```
-
-####Not Familiar with Git?#####
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
-
-```
-	> npm install
-	> npm start
-```
+* `npm start` to build and run server
+* Can add webpack args, for e.g.: `npm start -- --host 0.0.0.0 --port 4000`

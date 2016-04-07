@@ -7,7 +7,9 @@ import VideoList from './components/video_list';
 import SearchBar from './components/search_bar';
 import VideoDetail from './components/video_detail';
 
-const API_KEY = 'AIzaSyBVgqyNxuUQb3qdmRmbaTSqE0QQu7TFA4Y';
+import SECRETS from './config/secrets.json';
+
+const API_KEY = SECRETS.api_key;
 
 class App extends Component {
   constructor(props){
